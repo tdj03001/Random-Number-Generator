@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Trigger Random</title>
-  
+  <title>Random Number Generator</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -18,8 +19,10 @@
 
     <div class="text-center">
 
-      <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question"></span></h1></button>
-      
+      <button id="random-button" class="btn btn-primary btn-lg">
+        <h1><span class="fa fa-question"></span></h1>
+      </button>
+
     </div>
 
   </div>
@@ -28,16 +31,17 @@
 
   <script type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-       $("#random-button").on("click", function() {
-        
-        var num= (Math.floor(Math.random() * 1000000));
+      $("#random-button").on("click", function () {
+
+        var num = (Math.floor(Math.random() * 1000000));
         $("#random-number").text(num);
-       })
-      });
+      })
+    });
 
   </script>
-  
+
 </body>
+
 </html>
